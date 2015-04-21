@@ -31,6 +31,11 @@ public class MainActivity extends Activity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            int knownNumbers;
+            knownNumbers = 5;
+            knownNumbers = id;
+            id = knownNumbers;
+
             return true;
         }
 
