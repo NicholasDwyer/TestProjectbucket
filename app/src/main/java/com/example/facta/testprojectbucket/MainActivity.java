@@ -2,6 +2,7 @@ package com.example.facta.testprojectbucket;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -35,6 +36,9 @@ public class MainActivity extends Activity {
             knownNumbers = 5;
             knownNumbers = id;
             id = knownNumbers;
+            if(isFinishing()) {
+                Log.d("123", "Something else here");
+            }
 
             return true;
         }
